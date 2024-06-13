@@ -80,12 +80,11 @@ public class TestIterator {
     // TODO using assertEquals and List.of, express which values are left in the list
     // See TestList.java for examples of how to use List.of; also see the Java List
     // interface for more information
-    list.indexOf(33);
-    list.indexOf(44);
-    list.indexOf(77);
-    list.indexOf(55);
-    list.indexOf(77);
-    list.indexOf(66);
+    assertEquals(4, list.size());
+    assertEquals(0, list.indexOf(33));
+    assertEquals(1, list.indexOf(44));
+    assertEquals(2, list.indexOf(55));
+    assertEquals(3, list.indexOf(66));
   }
 
   @Test
@@ -105,7 +104,7 @@ public class TestIterator {
     final var i = list.iterator();
     while(i.hasNext()) {
       sum += i.next().doubleValue();
-      n++;
+      n++; //else will lead to infinity
     }
     assertEquals(61.3, sum / n, 0.1);
     assertEquals(7, n);
