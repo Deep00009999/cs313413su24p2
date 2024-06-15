@@ -7,6 +7,7 @@ import static org.junit.Assert.fail;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 import org.junit.After;
 import org.junit.Before;
@@ -15,12 +16,14 @@ import org.junit.Test;
 public class TestIterator {
 
   private List<Integer> list;
+//  private LinkedList<Integer> list;
   // See the Java List Interface documentation to understand what all the List methods do ...
 
   @Before
   public void setUp() throws Exception {
     list = new ArrayList<Integer>();
     // TODO also try with a LinkedList - does it make any difference?
+//    list = new LinkedList<Integer>();
   }
 
   @After
