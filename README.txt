@@ -67,9 +67,9 @@ For Size = 100000, REPS = 1000000, Overall runtime = ~41sec,02ms or 41,002ms
 29.01s (29,001ms) testLinkedListAccess
 11.96s (11,096ms) testArrayListAddRemove
 ============================================================================
-For Size = 1000000, REPS = 1000000, Overall runtime = ~41sec,02ms or 41,002ms
+For Size = 1000000, REPS = 1000000, Overall runtime = 33 min 5 sec
 ============================================================================
-23ms testArrayListAccess
-26ms testLinkedListAddRemove
-29.01s (29,001ms) testLinkedListAccess
-11.96s (11,096ms) testArrayListAddRemove
+144ms testArrayListAccess
+254ms testLinkedListAddRemove
+29 min 52 sec testLinkedListAccess
+3 min 13 sec testArrayListAddRemove
